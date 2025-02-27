@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <!-- Título y descripción fuera del formulario -->
+    <h1 id="title">Mi Primer Formulario</h1>
+    <p id="description">Este es un espacio donde puedes compartir tus datos y enviar un mensaje de forma fácil y rápida.</p>
+
+    <!-- Formulario -->
+    <form id="survey-form">
+      <label id="name-label" for="name">Nombre:</label>
+      <input type="text" id="name" name="nombre" placeholder="Ingresa tu nombre" required>
+      
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Ingresa tu dirección de correo" required>
+      
+      <label id="number-label" for="number">Edad:</label>
+      <input min="13" max="120" type="number" id="number" name="number" placeholder="Edad" required>
+      
+      <label for="dropdown">Ocupación:</label>
+      <select id="dropdown">
+        <option value="1">Soy Dueño de Negocio</option>
+        <option value="2">Soy Inversionista</option>
+      </select>
+      
+      <label>Género:</label>
+      <label><input type="radio" id="genero-masculino" name="genero" value="masculino"> Masculino</label>
+      <label><input type="radio" id="genero-femenino" name="genero" value="femenino"> Femenino</label>
+      
+      <label>¿Aceptas los términos?</label>
+      <label><input type="checkbox" id="check-si" name="respuesta" value="si"> Sí</label>
+      <label><input type="checkbox" id="check-no" name="respuesta" value="no"> No</label>
+      
+      <label for="bio">Consejo:</label>
+      <textarea id="bio" name="bio" rows="3" cols="30" placeholder="¿Qué consejo financiero darías?"></textarea>
+      
+      <input id="submit" type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+</html>
